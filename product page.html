@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esuper - The lowest prices just for you</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #1A1AA6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header img {
+            vertical-align: middle;
+        }
+        .header .cart {
+            float: right;
+            margin-right: 20px;
+        }
+        .banner {
+            background-color: #8dd3e0;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+        .sort {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 10px solid #ddd;
+            border-radius: 40px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-price {
+            color: #0066c0;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .product button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Esuper Logo">
+        <span class="cart">Rs. 0.00 <img src="cart.png" alt="Cart Icon"></span>
+    </div>
+    <div class="banner">
+        <h2>The lowest prices just for you.</h2>
+    </div>
+    
+    <div class="sort">
+        <label for="categories">Sort by:</label>
+        <select id="categories">
+            <option value="all">Categories</option>
+            <option value="all">Vegetables</option>
+            <option value="all">Fruits</option>
+            <option value="all">Grocery</option>
+            <option value="all">Meats</option>
+
+            
+        </select>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\63212168_908311535086_0.65054000-1605761591.png" alt="Raigam Soya Meat 130g">
+            <p>Raigam Soya Meet 130g</p>
+            <div class="product-price">Rs 155.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\happy_cow_cheese_portions_8s_600x.png" alt="Happy Cow Cheese 350g">
+            <p>Happy Cow Cheese 350g</p>
+            <div class="product-price">Rs 1250.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\74434331_245226902266_0.61577400-1604651109.png" alt="Signal Toothpaste 135g">
+            <p>Signal Toothpaste 135g</p>
+            <div class="product-price">Rs 300.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\ANCHOR-NEWDALE-SET-YOGHURT-80G-1.png" alt="Anchor Newdale Yogurt">
+            <p>Anchor Newdale Yogurt 80g</p>
+            <div class="product-price">Rs 80.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\sunlight_1_kg_800x.jpg" alt="Lux Soap 125g">
+            <p>Lux Soap 125g</p>
+
+            <div class="product-price">Rs 350.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\23b594367fd9e49656f86663e3124e83.png_750x750.jpg_.webp" alt="Lux Soap 125g">
+            <p>Lux Soap 125g</p>
+            <div class="product-price">Rs 225.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\vim-extra-anti-smell-pudina-dishwash-liquid-750-ml-product-images-o492519505-p590951053-0-202403281752.jpg" alt="Vim Dishwash 1050ml">
+            <p>Vim Dishwash 1050ml</p>
+
+            <div class="product-price">Rs 250.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\img_1920x_5f59cc74d08068-29397791-26765219 (1).jpg" alt="Araliya Samba Rice 5kg">
+            <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 1560.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\503907-Kumarika-Long-Black-Shampoo-180ml.jpg" alt="Kumarika Shampoo 350ml">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 350.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\4792192845366.jpg" alt="Munchee Chocolate Biscuit 300g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 475.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\ayush_turmeric_face_wash_40g_466x466.jpg" alt="Lever Ayush Face Wash 120g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 385.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\1595836627305_salt_m.jpg"alt="Wijaya Salt 500g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 150.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\kypmagic-classic-8714100289952.png" alt="Magic Classic Ice Cream 1L">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 1700.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\TikiriChicken_400x400.png" alt="Maggi Noodles">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 155.00</div>
+            <button>Add to 🛒</button>
+        </div>
+        <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+             <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+             <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+            <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+              <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+              <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+         <div class="product">
+            <img src="C:\Users\mihir\OneDrive\Desktop\HTML\nescafe-classic-new-50g.png" alt="Nescafe 250g">
+             <p>Araliya Samba Rice 5kg</p>
+            <div class="product-price">Rs 420.00</div>
+            <button>Add to 🛒</button>
+        </div>
+     </div>
+</body>
+</html>
