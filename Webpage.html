@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovators Inc.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+
+        }
+        .about {
+            background-color: #54f59a;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .team {
+            padding: 20px;
+            text-align: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            /* justify-content: space-between; */
+        }
+        .team h2 {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .team-member {
+            display: inline-block;
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            vertical-align: top;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 0%;
+        }
+        .team-member h3 {
+            margin-top: 15px;
+        }
+        .team-member p {
+            font-size: 14px;
+            color: #555;
+        }
+        .team-member button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .team-member button:hover {
+            background-color: #45a049;
+        }
+
+
+       {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .services {
+            padding: 20px;
+            text-align: center;
+            background-color: #e9f7ef;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .services h2 {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .service {
+            display: inline-block;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            vertical-align: top;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 0px;
+        }
+        .service h3 {
+            margin-top: 15px;
+        }
+        .service p {
+            font-size: 14px;
+            color: #555;
+        }
+        .service button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .service button:hover {
+            background-color: #45a049;
+        }
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .promotions {
+            width: 80%;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .promotions h2 {
+            text-align: center;
+            color: #2c7;
+        }
+        .promotions table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .promotions table, .promotions th, .promotions td {
+            border: 1px solid #000;
+        }
+        .promotions th, .promotions td {
+            padding: 10px;
+            text-align: center;
+        }
+        .promotions td {
+            background-color: #e0ffe0;
+        }
+        .promotions img {
+            max-width: 100px;
+        }
+        {
+            font-family: Arial, sans-serif;
+        }
+        .promotions {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            align-items: center;
+
+        }
+        .promotions h2 {
+            text-align: center;
+            color: #4CAF50;
+            text-align: left;
+        }
+        .promotions table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .promotions table, .promotions th, .promotions td {
+            border: 1px solid #000;
+        }
+        .promotions th, .promotions td {
+            padding: 10px;
+            text-align: center;
+        }
+        .promotions td {
+            background-color: #e0ffe0;
+        }
+        .promotions img {
+            max-width: 100px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #f1f1e6;
+        }
+        .button-container button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .contact-us {
+            padding: 20px;
+            text-align: center;
+            background-color: #2E7D32;
+            color: white;
+            margin-top: 30px;
+        }
+        .contact-us h2 {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        {
+            font-family: Arial, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tech Innovators Inc.</h1>
+        <img src="C:\Users\Dhanushiya\Desktop\DOC\logo.jpg" alt="logo" style="width:40px;height:40px;">
+    </div>
+    <div class="about">
+        <h2>About Us</h2>
+        <p><strong>Our Vision:</strong> To be the global leader in innovative technology solutions that transform the way people live and work.</p>
+        <p><strong>Our Mission:</strong> To deliver cutting-edge software products and services that enhance productivity, drive business success, and improve the quality of life for our clients and their customers.</p>
+    </div>
+    <div class="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\se.jpeg" alt="Software Engineer">
+            <h3>Software Engineer</h3>
+            <p>Working as a Software Engineer with 7 years of experience in the field. I have skills in designing, developing, and maintaining software applications.</p>
+            <button>View Salary</button>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\download.jpeg" alt="Network Engineer">
+            <h3>Network Engineer</h3>
+            <p>I am working as a Network Engineer with 4 years of experience in the field. I have skills in planning, implementing, and managing network systems to ensure reliable connectivity and performance.</p>
+            <button>View Salary</button>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\d.jpeg" alt="Mobile App Developer">
+            <h3>Mobile App Developer</h3>
+            <p>I am working as a Mobile Developer with 8 years of experience in the field. I have skills in creating applications for mobile devices, focusing on user interface, performance, and compatibility.</p>
+            <button>View Salary</button>
+        </div>
+        <div class="team-member">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\E.jpeg" alt="Devlops Engineer">
+            <h3>DevOps Engineer</h3>
+            <p>I am working as a DevOps Engineer with 7 years of experience in the field. I have skills in automating and optimizing software delivery and infrastructure changes for efficient deployment and maintenance.</p>
+            <button>View Salary</button>
+        </div>
+    </div>
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\S.jpeg" alt="Hardware and Software Support">
+            <h3>Hardware and Software Support</h3>
+            <p>Comprehensive support for all your hardware and software needs, ensuring smooth and efficient operations.</p>
+            <button>Take Service</button>
+        </div>
+        <div class="service">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\S.jpeg" alt="Cloud Services">
+            <h3>Cloud Services</h3>
+            <p>Scalable and secure cloud solutions tailored to optimize your business performance and data management.</p>
+            <button>Take Service</button>
+        </div>
+        <div class="service">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\S.jpeg" alt="Network Security">
+            <h3>Network Security</h3>
+            <p>Advanced network security measures to protect your critical information and infrastructure from cyber threats.</p>
+            <button>Take Service</button>
+        </div>
+        <div class="service">
+            <img src="C:\Users\Dhanushiya\Desktop\DOC\S.jpeg" alt="Mobile Development">
+            <h3>Mobile Development</h3>
+            <p>DevOps practices to enhance collaboration, accelerate development, and improve deployment efficiency.</p>
+            <button>Take Service</button>
+        </div>
+    </div>
+    <div class="promotions">
+        <h2>Today's Promotions</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="C:\Users\Dhanushiya\Desktop\DOC\R.jpeg" alt="Discount 30% OFF">
+                    <p>For Software Projects</p>
+                </td>
+                <td>
+                    <img src="C:\Users\Dhanushiya\Desktop\DOC\R.jpeg" alt="Special Sale 50% OFF">
+                    <p>For Networking Projects</p>
+                </td>
+                <td>
+                    <img src="C:\Users\Dhanushiya\Desktop\DOC\R.jpeg" alt="Best Sale 50% OFF">
+                    <p>For Cloud Services</p>
+                </td>
+                <td>
+                    <img src="C:\Users\Dhanushiya\Desktop\DOC\R.jpeg" alt="Hot Deals">
+                    <p>For Mobile App Projects</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="button-container">
+                        <button>Click for promotions</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="contact-us">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="text" placeholder="Enter the service name">
+            <button>Submit</button>
+        </div>
+    </div>
+
+</body>
+</html>
